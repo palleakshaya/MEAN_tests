@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Homepage</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      body {
+        font-family: "Inter";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main-container {
+        padding: 20px;
+      }
+
+      /* .hamburger {
+        position: absolute;
+        top: 54px;
+        right: 42px;
+        font-size: 25px;
+      } */
+
+      .navigation-bars {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-bottom: 20px;
+        color: black;
+      }
+
+      .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 930px;
+        width: 100%;
+      }
+
+      .web3img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .web3content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .heading {
+        font-size: 53px;
+        width: 75%;
+        margin: 0;
+        font-weight: bold;
+      }
+      .p {
+        font-size: 15px;
+        line-height: 25px;
+        color: hsl(236, 13%, 42%);
+      }
+
+      .readmore {
+        background-color: hsl(5, 85%, 63%);
+        color: hsl(240, 100%, 5%);
+        letter-spacing: 2px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .readmore:hover {
+        transform: scale(1.25);
+        border-radius: 1.5;
+      }
+      .readmore:active {
+        /*targeting mouse click*/
+        transform: scale(0.9);
+      }
+      .new-container {
+        background-color: hsl(240, 100%, 5%);
+        color: white;
+        padding: 10px;
+      }
+
+      .new-container h3 {
+        color: hsl(35, 77%, 62%);
+      }
+      .new-container p {
+        color: hsl(233, 8%, 79%);
+      }
+
+      .line {
+        border: 0.5px solid white;
+        margin: 10px 0;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .bottom-sub {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-right: 25px;
+      }
+
+      .image {
+        width: 100px;
+        height: auto;
+      }
+
+      .number {
+        color: hsl(5, 85%, 63%);
+        margin: 0;
+        padding-top: 0;
+      }
+
+      .mini {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+      }
+
+      .mini h2 {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      .mini p {
+        margin: 0;
+        font-size: 15px;
+        color: hsl(236, 13%, 42%);
+      }
+
+      @media (min-width: 768px) {
+        .middle {
+          flex-direction: row;
+          gap: 40px;
+        }
+
+        .web3content {
+          flex: 1;
+        }
+
+        .new-container {
+          flex: 1;
+        }
+
+        .bottom {
+          flex-direction: row;
+        }
+        .h1-p {
+          display: flex;
+          width: 52%;
+          flex-direction: column;
+          line-height: 25px;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+        .heading {
+          width: 84%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .main-container {
+          padding: 40px;
+        }
+
+        .navigation-bars {
+          gap: 60px;
+        }
+
+        .bottom-sub {
+          gap: 20px;
+        }
+
+        .web3img {
+          max-width: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        .web3content {
+          flex-direction: row;
+        }
+        /* .hamburger {
+          position: absolute;
+          top: 109px;
+          right: 205px;
+          font-size: 35px;
+        } */
+        /* .h1-p {
+          display: flex;
+          flex-direction: column;
+        } */
+        /* .mixed {
+          display: grid;
+          grid-column: 1fr 1fr;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="file:///C:/Users/AKSHAYA.PALLE/AppData/Local/Temp/8558b50f-6095-431a-b5c1-c1eb24890e95_news-homepage-main.zip.e95/news-homepage-main/assets/images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="main-container">
+      <div class="navigation-bars">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </div>
+
+    <div class="header">
+      <!-- <h1>W.</h1> -->
+       <div class="hamburger">
+        <i class="fa-thin fa-bars"></i>
+        </div> 
+    </div> 
+
+      <div class="mixed">
+        <div class="middle">
+          <div class="content">
+            <img class="web3img" src="image1.jpg" alt="Web 3.0" />
+            <div class="web3content">
+              <h1 class="heading">The Bright Future of Web 3.0?</h1>
+              <div class="h1-p">
+                <p class="p">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="readmore">READ MORE</button>
+              </div>
+            </div>
+          </div>
+          <div class="new-container">
+            <h3>New</h3>
+            <div>
+              <h4>Hydrogen VS Electric Cars</h4>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <div class="line"></div>
+            </div>
+            <div>
+              <h4>The Downsides of AI Artistry</h4>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+              <div class="line"></div>
+            </div>
+            <div>
+              <h4>Is VC Funding Drying Up?</h4>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-sub">
+          <img class="image" src="image-retro-pcs.jpg" alt="Retro PCs" />
+          <div class="mini">
+            <div class="number"><h1>01</h1></div>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="bottom-sub">
+          <img class="image" src="image-top-laptops.jpg" alt="Top Laptops" />
+          <div class="mini">
+            <div class="number"><h1>02</h1></div>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="bottom-sub">
+          <img
+            class="image"
+            src="image-gaming-growth.jpg"
+            alt="Gaming Growth"
+          />
+          <div class="mini">
+            <div class="number"><h1>03</h1></div>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
